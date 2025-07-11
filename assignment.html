@@ -60,6 +60,91 @@
       max-width: 300px;
       text-align: left;
     }
+    .action-section {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      font-family: Arial, sans-serif;
+      padding: 3rem 2rem;
+      border-radius: 16px;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .action-text {
+      flex: 1;
+      padding-right: 2rem;
+      min-width: 280px;
+    }
+
+    .action-text h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #1a1a1a;
+    }
+
+    .action-text p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .action-text .btn {
+      background-color: #4f46e5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .action-image {
+      flex: 2;
+      text-align: right;
+      min-width: 280px;
+    }
+
+    .action-image img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+
+      .action-text {
+        padding-right: 0;
+        margin-bottom: 2rem;
+      }
+
+      .action-image {
+        text-align: center;
+      }
+    }
+    .contact {
+      padding: 2rem;
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .contact button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
     </style>
 </head>
 <body>
@@ -105,8 +190,24 @@
       <strong>- John</strong>
     </div>
   </section>
+  <section class="cta">
+    <h2>Ready to focus better</h2>
+    <a href="#" class="btn">Try Now</a>
+    <img src="https://via.placeholder.com/300x200" alt="Webflow UI Template" style="margin-top:1rem; border-radius:12px;">
+  </section>
 
+  <section class="contact">
+    <h2>Let’s Get in Touch</h2>
+    <form>
+      <input type="email" placeholder="Your email" required>
+      <input type="text" placeholder="Your name" required>
+      <textarea rows="4" placeholder="Write your message..." required></textarea>
+      <button type="submit">Get in Touch</button>
+    </form>
+  </section>
 
-    
+  <footer>
+    <h2 style="color:#4f46e5">LOGO</h2>
+  </footer>
 </body>
 </html>
