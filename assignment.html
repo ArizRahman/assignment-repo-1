@@ -45,6 +45,21 @@
       max-width: 800px;
       text-align: center;
     }
+    .testimonials {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+    .testimonial {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 300px;
+      text-align: left;
+    }
     </style>
 </head>
 <body>
@@ -67,6 +82,30 @@
       <img src="styles/img1.png" alt="Webflow Conf 2022">
     </div>
   </section>
+  <section class="stats">
+    <div><h3>50K</h3><p>Active Users</p></div>
+    <div><h3>2M+</h3><p>Page Visitors</p></div>
+    <div><h3>95%</h3><p>Satisfaction Rate</p></div>
+  </section>
+
+  <section class="testimonials">
+    <div class="testimonial">
+      <h4>Loved by Designers</h4>
+      <p>“Amazing UI. Helped our team build faster.”</p>
+      <strong>- Alex</strong>
+    </div>
+    <div class="testimonial">
+      <h4>Loved by Designers</h4>
+      <p>“So easy to use and flexible.”</p>
+      <strong>- Maria</strong>
+    </div>
+    <div class="testimonial">
+      <h4>Loved by Designers</h4>
+      <p>“Clean design and smooth workflow.”</p>
+      <strong>- John</strong>
+    </div>
+  </section>
+
 
     
 </body>
