@@ -11,9 +11,16 @@
       background: #f7f8ff;
       color: #000;
     }
-    header, footer {
-      text-align: center;
-      padding: 2rem;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-image: url('assets/Hero-bg.png'); 
+      color: blue;
+    }
+    header h2 {
+      margin: 0;
     }
     .btn {
       padding: 10px 20px;
@@ -24,11 +31,11 @@
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
-      margin-top: 1rem;
     }
     .hero {
       text-align: center;
       padding: 4rem 2rem;
+      background-image: url('assets/hero-bg.png');
     }
     .hero h1 {
       font-size: 2rem;
@@ -45,22 +52,12 @@
       max-width: 800px;
       text-align: center;
     }
-    .testimonials {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-      flex-wrap: wrap;
+    .stats h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #3407f9;
     }
-    .testimonial {
-      background: white;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 300px;
-      text-align: left;
-    }
-    .action-section {
+     .action-section {
       display: flex;
       align-items: center;
       background-color: white;
@@ -120,6 +117,20 @@
       .action-image {
         text-align: center;
       }
+      .testimonials {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+    .testimonial {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 300px;
+      text-align: left;
     }
     .contact {
       padding: 2rem;
@@ -145,34 +156,156 @@
       border-radius: 6px;
       cursor: pointer;
     }
+    .contact-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-left {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-left h2 {
+      font-size: 3rem;
+      color: #000;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .contact-right {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #4f46e5;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #3e38c1;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-left {
+        margin-bottom: 5rem;
+      }
+
+      .contact-right form {
+        align-items: center;
+      }
+
+      form input, form textarea, form button {
+        width: 100%;
+      }
+    }
+    .footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer .logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #3f3fff;
+  margin-bottom: 16px;
+}
+
+.footer .description {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #888888;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  color: #3f3fff;
+}
+
     </style>
 </head>
 <body>
     <header>
     <h2>LOGO</h2>
-    <a href="#" class="btn">Get Started</a>
+    <a href="#" class="btn">Sign Up</a>
   </header>
 
   <section class="hero">
     <h1>Cool Dark UI Template for Webflow Agencies!</h1>
     <a href="#" class="btn">Purchase Now</a>
   </section>
-  <section class="action-section">
+  </section>
+    <section class="action-section">
     <div class="action-text">
       <h2>See It in Action</h2>
       <p>Explore the live preview and imagine your brand in this bold new look.</p>
       <a href="#" class="btn">Launch Live Preview</a>
     </div>
     <div class="action-image">
-      <img src="styles/img1.png" alt="Webflow Conf 2022">
+      <img src="assets/img1.png" alt="Webflow Conf 2022">
     </div>
   </section>
   <section class="stats">
-    <div><h3>50K</h3><p>Active Users</p></div>
-    <div><h3>2M+</h3><p>Page Visitors</p></div>
-    <div><h3>95%</h3><p>Satisfaction Rate</p></div>
+    <div><h1>50K</h1><p>Active Users</p></div>
+    <div><h1>2M+</h1><p>Focus Sessions</p></div>
+    <div><h1>95%</h1><p>Satisfaction Rate</p></div>
   </section>
-
   <section class="testimonials">
     <div class="testimonial">
       <h4>Loved by Designers</h4>
@@ -190,24 +323,37 @@
       <strong>- John</strong>
     </div>
   </section>
-  <section class="cta">
-    <h2>Ready to focus better</h2>
-    <a href="#" class="btn">Try Now</a>
-    <img src="https://via.placeholder.com/300x200" alt="Webflow UI Template" style="margin-top:1rem; border-radius:12px;">
-  </section>
+  <section class="contact-section">
+    <div class="contact-left">
+      <h2>Let's Get in<br>Touch</h2>
+    </div>
+    <div class="contact-right">
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
 
-  <section class="contact">
-    <h2>Let’s Get in Touch</h2>
-    <form>
-      <input type="email" placeholder="Your email" required>
-      <input type="text" placeholder="Your name" required>
-      <textarea rows="4" placeholder="Write your message..." required></textarea>
-      <button type="submit">Get in Touch</button>
-    </form>
-  </section>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="full name" required>
 
-  <footer>
-    <h2 style="color:#4f46e5">LOGO</h2>
-  </footer>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="write your message...." required></textarea>
+
+        <button type="submit">Get in Touch</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="logo">LOGO</div>
+  <p class="description">
+    Ready to elevate your online presence? Contact us today to discuss <br />
+    your project and discover how we can bring your vision to life.
+  </p>
+  <nav class="footer-nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">How it Works</a>
+    <a href="#">Services</a>
+  </nav>
+</footer>
 </body>
 </html>
